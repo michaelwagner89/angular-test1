@@ -1,0 +1,64 @@
+<application>
+  <component name="SettingsState">
+    <option name="host" value="https://fupa.githost.io" />
+    <option name="token" value="VicSNMdvK4Xf5BccQA8-" />
+    <option name="projects">
+      <list>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/fupa/fupa-android.git" />
+          <option name="name" value="fupa-android" />
+          <option name="namespace" value="fupa" />
+          <option name="sshUrl" value="git@fupa.githost.io:fupa/fupa-android.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/fupa/fupa-api.git" />
+          <option name="name" value="fupa-api" />
+          <option name="namespace" value="fupa" />
+          <option name="sshUrl" value="git@fupa.githost.io:fupa/fupa-api.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/fupa/fupa-app.git" />
+          <option name="name" value="fupa-app" />
+          <option name="namespace" value="fupa" />
+          <option name="sshUrl" value="git@fupa.githost.io:fupa/fupa-app.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/fupa/fupa-ios.git" />
+          <option name="name" value="fupa-ios" />
+          <option name="namespace" value="fupa" />
+          <option name="sshUrl" value="git@fupa.githost.io:fupa/fupa-ios.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/fupa/fupa-old.git" />
+          <option name="name" value="fupa-old" />
+          <option name="namespace" value="fupa" />
+          <option name="sshUrl" value="git@fupa.githost.io:fupa/fupa-old.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/fupa/fupa-wordpress.git" />
+          <option name="name" value="fupa-wordpress" />
+          <option name="namespace" value="fupa" />
+          <option name="sshUrl" value="git@fupa.githost.io:fupa/fupa-wordpress.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/magic/magic-framework.git" />
+          <option name="name" value="magic-framework" />
+          <option name="namespace" value="magic" />
+          <option name="sshUrl" value="git@fupa.githost.io:magic/magic-framework.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/magic/magic-sync.git" />
+          <option name="name" value="magic-sync" />
+          <option name="namespace" value="magic" />
+          <option name="sshUrl" value="git@fupa.githost.io:magic/magic-sync.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://fupa.githost.io/magic/magic-sync-updater.git" />
+          <option name="name" value="magic-sync-updater" />
+          <option name="namespace" value="magic" />
+          <option name="sshUrl" value="git@fupa.githost.io:magic/magic-sync-updater.git" />
+        </ProjectDto>
+      </list>
+    </option>
+  </component>
+</application>

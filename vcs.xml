@@ -1,0 +1,25 @@
+<application>
+  <component name="GitRememberedInputs">
+    <option name="visitedUrls">
+      <list>
+        <UrlAndUserName>
+          <option name="url" value="http://git.fupa.net/fupa-core/fupa-core.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://git.fupa.net" />
+          <option name="userName" value="m.wagner@fupa.net" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://git.fupa.net/fupa-core/fupa-old.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@fupa.githost.io:fupa/fupa-app.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+      </list>
+    </option>
+    <option name="cloneParentDir" value="$USER_HOME$/PHPStormProjects" />
+  </component>
+</application>
