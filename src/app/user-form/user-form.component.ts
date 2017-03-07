@@ -19,6 +19,9 @@ export class UserFormComponent implements OnInit, FormComponent {
     user = new User();
     title: string;
 
+    userId: number;
+
+
 
     constructor(fb: FormBuilder,
                 private _router: Router,
@@ -42,15 +45,15 @@ export class UserFormComponent implements OnInit, FormComponent {
     ngOnInit() {
 
 
-        var userId = this._route.snapshot.params['id'];
+        this.userId = this._route.snapshot.params['id'];
 
-        this.title = userId ? "Edit user" : "New User";
+        this.title = this.userId ? "Edit user" : "New User";
 
-        if (!userId)
+        if (!this.userId)
             return;
 
 
-        this._uService.getUser(userId)
+        this._uService.getUser(this.userId)
             .subscribe(
                 user => this.user = user,
                 response => {
@@ -72,6 +75,15 @@ export class UserFormComponent implements OnInit, FormComponent {
     }
 
     save() {
+
+        if(this.userId > 0)
+        {
+            this._uService.updateUser(this.userId,this.form.value)
+                .subscribe(x => {
+                    this.form.markAsPristine();
+                    this._router.navigate(['users']);
+                });
+        }
 
         this._uService.addUser(this.form.value)
             .subscribe(x => {

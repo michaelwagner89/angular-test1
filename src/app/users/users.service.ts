@@ -32,5 +32,11 @@ export class UsersService {
 
     }
 
+    updateUser(userId, user) {
+
+        return this._http.put(this._url + "/" + userId,JSON.stringify(user))
+            .map(res => res.json());
+
+    }
 
 }
