@@ -1,0 +1,72 @@
+<h1>Add a User</h1>
+
+<div class="row">
+  <div class="col-md-6 col-lg-6 well">
+
+
+  <form [formGroup]="form">
+
+    <fieldset>
+      <legend>User</legend>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input name="name" formControlName="name" type="text" class="form-control">
+
+        <div *ngIf="form.controls.name.touched && !form.controls.name.valid" class="alert alert-danger">
+            Name is required.
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-Mail</label>
+        <input name="email" formControlName="email" type="text"  class="form-control">
+
+        <div *ngIf="form.controls.email.touched && !form.controls.email.valid" class="alert alert-danger">
+          E-Mail is not valid!
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" #phone formControlName="phone"  class="form-control">
+      </div>
+
+    </fieldset>
+
+    <fieldset formGroupName="address">
+      <legend>Adresse</legend>
+
+      <div class="form-group">
+        <label for="street">Street</label>
+        <input ngModel type="text" #street formControlName="street"  class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="suite">Suite</label>
+        <input ngModel type="text" #suite formControlName="suite" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <input ngModel type="text" #city formControlName="city" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label for="zipcode">ZipCode</label>
+        <input ngModel type="text" #zipcode formControlName="zipcode" class="form-control">
+      </div>
+
+
+    </fieldset>
+
+
+    <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Save</button>
+
+  </form>
+
+  </div>
+
+</div>
+
+

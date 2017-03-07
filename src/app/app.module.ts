@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 
 import { routing } from './app.routing';
 import { UserFormComponent } from './user-form/user-form.component';
+import {PreventUnsavedChangesGuard} from "./shared/prevent-unsaved-changes-guard.service";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { UserFormComponent } from './user-form/user-form.component';
     JsonpModule,
     routing
   ],
-  providers: [],
+  providers: [PreventUnsavedChangesGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
