@@ -16,6 +16,7 @@ export class PostsComponent implements OnInit {
 
     posts;
     isLoading = true;
+    masterPost;
 
     ngOnInit() {
         this._postService.getPosts()
@@ -24,6 +25,14 @@ export class PostsComponent implements OnInit {
                 () => {
                     this.isLoading = false;
                 });
+
+    }
+
+
+    activatePost(post) {
+
+        this.masterPost = post;
+
 
     }
 
