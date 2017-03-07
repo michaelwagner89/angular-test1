@@ -9,6 +9,7 @@ export const routing = RouterModule.forRoot([
     {path: '', component: HomeComponent},
     {path: 'users', component: UsersComponent},
     {path: 'user/new', component: UserFormComponent, canDeactivate: [PreventUnsavedChangesGuard]},
+    {path: 'users/:id', component: UserFormComponent, canDeactivate: [PreventUnsavedChangesGuard]},
     {path: 'posts', component: PostsComponent},
     {path: '**', component: HomeComponent}
 ])
