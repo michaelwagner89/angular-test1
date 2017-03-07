@@ -12,10 +12,13 @@ export class PostsComponent implements OnInit {
   constructor(private _postService: PostsService) {  }
 
   posts;
+  loaded = true;
 
   ngOnInit() {
     this._postService.getPosts()
-        .subscribe(res => { this.posts = res});
+        .subscribe(res =>  this.posts = res,
+                  null,
+                  () => {this.loaded = false;} );
 
   }
 
