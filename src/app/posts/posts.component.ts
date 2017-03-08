@@ -15,7 +15,7 @@ export class PostsComponent implements OnInit {
     }
 
     posts;
-    isLoading = true;
+    postsLoading = true;
     commentsLoading = false;
     masterPost;
     masterPostComments;
@@ -25,7 +25,7 @@ export class PostsComponent implements OnInit {
             .subscribe(res => this.posts = res,
                 null,
                 () => {
-                    this.isLoading = false;
+                    this.postsLoading = false;
                 });
 
     }
