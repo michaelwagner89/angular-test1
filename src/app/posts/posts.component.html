@@ -1,10 +1,16 @@
-
 <h1>Posts</h1>
 
 <div class="row">
     <div class="col-md-6">
 
-        <spinner [isvisible]="postsLoading"></spinner>
+
+        <select class="form-control" #u (change)="reloadPosts({userId: u.value})">
+            <option value="0">alle User anzeigen</option>
+            <option *ngFor="let user of userList" [value]="user.id">{{user.name}}</option>
+        </select>
+        <hr/>
+
+        <spinner [isvisible]=" postsLoading"></spinner>
 
         <ul class="list-group posts">
             <li class="list-group-item"

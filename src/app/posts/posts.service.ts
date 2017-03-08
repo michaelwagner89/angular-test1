@@ -9,9 +9,21 @@ export class PostsService {
     constructor(private _http: Http) {
     }
 
-    getPosts() {
+    getPosts(filter?) {
 
-        return this._http.get(this._url)
+        var url = this._url;
+        if (filter && filter.userId > 0)
+            url += "?userId=" + filter.userId;
+
+        return this._http.get(url)
+            .map(res => res.json());
+
+    }
+
+
+    getPostsByUserId(userId) {
+
+        return this._http.get(this._url + '?userId=' + userId)
             .map(res => res.json());
 
     }
