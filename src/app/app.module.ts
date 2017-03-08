@@ -14,6 +14,7 @@ import {UserFormComponent} from './user-form/user-form.component';
 import {PreventUnsavedChangesGuard} from "./shared/prevent-unsaved-changes-guard.service";
 import {SpinnerComponent} from "./shared/spinner.component";
 import {SharedModule} from "./shared/shared.module";
+import {CommentComponent} from './comment/comment.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import {SharedModule} from "./shared/shared.module";
         UsersComponent,
         PostsComponent,
         HomeComponent,
-        UserFormComponent
+        UserFormComponent,
+        CommentComponent
     ],
     imports: [
         BrowserModule,

@@ -17,6 +17,7 @@ export class PostsComponent implements OnInit {
     posts;
     isLoading = true;
     masterPost;
+    masterPostComments;
 
     ngOnInit() {
         this._postService.getPosts()
@@ -33,6 +34,8 @@ export class PostsComponent implements OnInit {
 
         this.masterPost = post;
 
+        this._postService.getPostComments(post.id)
+            .subscribe(res => this.masterPostComments = res);
 
     }
 

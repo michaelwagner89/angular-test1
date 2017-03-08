@@ -1,0 +1,10 @@
+
+.comment {
+    margin: 20px;
+}
+
+.userimage {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}

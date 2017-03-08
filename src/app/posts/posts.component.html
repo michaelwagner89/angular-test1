@@ -21,12 +21,24 @@
 
         <div *ngIf="masterPost" class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">{{masterPost.title}}</h3>
+                <h3 class="panel-title">{a{masterPost.title}}</h3>
             </div>
             <div class="panel-body">
-                {{masterPost.body}}
+                <p> {{masterPost.body}}</p>
+                <hr>
+
+
+                <div *ngIf="masterPostComments">
+                    <comment *ngFor="let comment of masterPostComments"
+                             [name]="comment.name"
+                             [text]="comment.body">
+                    </comment>
+                </div>
+
+
             </div>
         </div>
+
 
     </div>
 
