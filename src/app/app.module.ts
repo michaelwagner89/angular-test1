@@ -15,6 +15,7 @@ import {PreventUnsavedChangesGuard} from "./shared/prevent-unsaved-changes-guard
 import {SpinnerComponent} from "./shared/spinner.component";
 import {SharedModule} from "./shared/shared.module";
 import {CommentComponent} from './comment/comment.component';
+import {PaginationComponent} from './pagination/pagination.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import {CommentComponent} from './comment/comment.component';
         PostsComponent,
         HomeComponent,
         UserFormComponent,
-        CommentComponent
+        CommentComponent,
+        PaginationComponent
     ],
     imports: [
         BrowserModule,
