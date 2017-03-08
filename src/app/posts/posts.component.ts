@@ -16,6 +16,7 @@ export class PostsComponent implements OnInit {
 
     posts;
     isLoading = true;
+    commentsLoading = false;
     masterPost;
     masterPostComments;
 
@@ -32,12 +33,16 @@ export class PostsComponent implements OnInit {
 
     activatePost(post) {
 
+        this.commentsLoading = true;
+
         this.masterPost = post;
 
         this._postService.getPostComments(post.id)
-            .subscribe(res => this.masterPostComments = res);
+            .subscribe(res => this.masterPostComments = res,
+                null,
+                () => {
+                    this.commentsLoading = false;
+                });
 
     }
-
-
 }
