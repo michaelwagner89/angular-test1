@@ -14,8 +14,17 @@ import {UserFormComponent} from './user-form/user-form.component';
 import {PreventUnsavedChangesGuard} from "./shared/prevent-unsaved-changes-guard.service";
 import {SpinnerComponent} from "./shared/spinner.component";
 import {SharedModule} from "./shared/shared.module";
+import {AngularFireModule} from "angularfire2";
 import {CommentComponent} from './comment/comment.component';
 import {PaginationComponent} from './pagination/pagination.component';
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyBtTMiehNPS8FjzlRZqSLYDmdmjJ640TP4",
+    authDomain: "fstone-ddaa9.firebaseapp.com",
+    databaseURL: "https://fstone-ddaa9.firebaseio.com",
+    storageBucket: "fstone-ddaa9.appspot.com",
+    messagingSenderId: "257799165992"
+};
 
 @NgModule({
     declarations: [
@@ -33,6 +42,7 @@ import {PaginationComponent} from './pagination/pagination.component';
         SharedModule,
         FormsModule,
         ReactiveFormsModule,
+        AngularFireModule.initializeApp(firebaseConfig),
         HttpModule,
         JsonpModule,
         routing
