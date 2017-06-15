@@ -4,6 +4,9 @@
       <webServer id="5f722202-cfb9-4f5c-83a5-c14e7a191363" name="fstone Server" url="http://localhost:4200">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="91c26c2e-2c85-40cc-bc26-0bcb0c8ecf2e" name="sing server" url="http://localhost:3000">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
