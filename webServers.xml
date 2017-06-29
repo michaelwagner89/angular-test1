@@ -7,6 +7,9 @@
       <webServer id="91c26c2e-2c85-40cc-bc26-0bcb0c8ecf2e" name="sing server" url="http://localhost:3000">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="a8a5c390-51d2-43b7-a363-3dfb01538962" name="https://localhost" url="https://localhost">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
